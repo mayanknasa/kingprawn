@@ -202,8 +202,14 @@
           <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 m-10 align-middle ">
             <!-- Total Supply -->
             <div class="token1 p-6 border-4 border-white rounded-lg shadow-2xl">
-              <h1 class="text-3xl font-bold mb-4 text-black">Total Supply</h1>
-              <p class="tok pt-5">1,000,000,000</p>
+              <h1 class="text-3xl font-bold text-black uppercase mb-2">Total Supply</h1>
+              <h1 class="text-3xl font-bold text-black uppercase mb-2">Buy/sell tax 0%</h1>
+              <h1 class="text-3xl font-bold text-black uppercase mb-2">Launched on Moonshot</h1>
+            </div>
+            <div class="token1 p-6 border-4 border-white rounded-lg shadow-2xl">
+              <h1 class="text-3xl font-bold text-black uppercase mb-2">Fair launch </h1>
+              <h1 class="text-3xl font-bold text-black uppercase mb-2">Lp burned </h1>
+              <h1 class="text-3xl font-bold text-black uppercase mb-2">Renounced</h1>
             </div>
             <!-- Initial Liquidity -->
             <!-- <div class="token2 p-6 border-4 border-white rounded-lg shadow-md">
@@ -243,121 +249,21 @@
           </div>
         </div>
       </section>
-      <!-- Accordion Section -->
-      <section id="accordion" class="w-full text-center py-12 bg-white mb-10 mx-5 max-w-lg">
-        <div class="accordion" class="w-full max-w-md mx-auto bg-white border border-gray-200 shadow-md">
-          <!-- Create a Wallet -->
-          <div class="border-b border-gray-200">
-            <button
-              class="w-full flex items-center justify-between text-left p-4 font-semibold bg-gray-300 hover:bg-gray-400"
-              onclick="toggleAccordion(this)">
-              <span>HOW TO BUY: Create a Wallet</span>
-              <span class="accordion-icon">+</span>
-            </button>
-            <div class="p-4 hidden bg-white text-left">
-              <p>Go to Settings in your wallet and locate Networks. You might
-                have to manually add a network and input the following details
-                for Base Chain:</p>
-              <ul class="list-disc pl-5 mt-2">
-                <li><strong>Network Name:</strong> Base</li>
-                <li><strong>RPC Endpoint:</strong>
-                  https://mainnet.base.org/</li>
-                <li><strong>Chain ID:</strong> 8453</li>
-                <li><strong>Currency Symbol:</strong> ETH</li>
-                <li><strong>Block Explorer:</strong> https://basescan.org</li>
-              </ul>
-              <p class="mt-2">Click on CONNECT TO BASE after saving. Upon
-                completing this step, you should be able to connect to Base by
-                choosing it from the network selection menu in your wallet.</p>
-            </div>
-          </div>
-          <!-- Fund Your Wallet -->
-          <div class="border-b border-gray-200">
-            <button
-              class="w-full flex items-center justify-between text-left p-4 font-semibold bg-gray-300 hover:bg-gray-400"
-              onclick="toggleAccordion(this)">
-              <span>HOW TO BUY: Fund Your Wallet</span>
-              <span class="accordion-icon">+</span>
-            </button>
-            <div class="p-4 hidden bg-white text-left">
-              <p>To fund your wallet with Base ETH, you have some options:</p>
-              <ul class="list-disc pl-5 mt-2">
-                <li>Transfer ETH from Coinbase, Binance, or whatever exchange
-                  you prefer to your Base wallet. Make sure you select Base as
-                  the network.</li>
-                <li>You can utilize the following bridges to transfer ETH to
-                  Base ETH from another chain:
-                  <ul class="list-disc pl-5">
-                    <li><strong>Base Bridge:</strong> <a href="https://bridge.base.org/deposit"
-                        class="text-blue-500 underline">https://bridge.base.org/deposit</a></li>
-                    <li><strong>Stargate Finance:</strong> <a href="https://stargate.finance/"
-                        class="text-blue-500 underline">https://stargate.finance/</a></li>
-                    <li><strong>Orbiter Finance:</strong> <a href="https://www.orbiter.finance/"
-                        class="text-blue-500 underline">https://www.orbiter.finance/</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- CONNECT YOUR WALLET -->
-          <div class="border-b border-gray-200">
-            <button
-              class="w-full flex items-center justify-between text-left p-4 font-semibold bg-gray-300 hover:bg-gray-400"
-              onclick="toggleAccordion(this)">
-              <span>HOW TO BUY: CONNECT YOUR WALLET</span>
-              <span class="accordion-icon">+</span>
-            </button>
-            <div class="p-4 hidden bg-white text-left">
-              <ol class="list-decimal pl-5 mt-2">
-                <li>Change the network in your wallet to Base.</li>
-                <li>Go to Uniswap at <a href="https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE"
-                    class="text-blue-500 underline">https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE</a>.
-                </li>
-                <li>Connect your wallet with Uniswap.</li>
-                <!-- <li>In the lower swap field, choose a token and enter the
-                  official $KingPrawn on Base contract address:
-                  <code>0x0230e3e92840E2Db566F061AA1c4C6B2BEf8bEC0</code>.</li> -->
-              </ol>
-            </div>
-          </div>
-          <!-- Swap Your Tokens -->
-          <div>
-            <button
-              class="w-full flex items-center justify-between text-left p-4 font-semibold bg-gray-300 hover:bg-gray-400"
-              onclick="toggleAccordion(this)">
-              <span>HOW TO BUY: Swap Your Tokens</span>
-              <span class="accordion-icon">+</span>
-            </button>
-            <div class="p-4 hidden bg-white text-left">
-              <ol class="list-decimal pl-5 mt-2">
-                <li>Input the amount of ETH you want to spend.</li>
-                <li>Adjust the slippage to your preference by clicking on
-                  settings.</li>
-                <li>Click or Tap Swap.</li>
-                <li>Confirm in your wallet.</li>
-                <li>You are done!</li>
-              </ol>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
       <!-- social section -->
       <section id="social">
         <div class="flex flex-col-reverse items-center md:flex-row justify-between gap-5 ">
           <div class="social w-full md:w-1/2 mx-4 px-4 flex justify-center items-center">
-            <img class="w-80 md:96 lg:w-[1000px] mx-8" src="images/1.png" alt>
+            <img class="w-80 md:96 lg:w-[1000px] mx-8" src="images/4.png" alt>
           </div>
 
           <div class="social w-full md:w-1/2 mx-4 px-4">
             <h1 class="text-center md:text-left text-3xl lg:text-5xl font-extrabold mb-8 text-black ">Follow
               $KingPrawn on social media</h1>
             <div class="flex items-center justify-center md:justify-start gap-4 ">
-              <a href="https://t.me/+V_7ffm4PkZsxMTA0">
+              <a href="">
                 <img class="w-24 transform hover:scale-110 transition duration-200" src="images/tg.png" alt>
               </a>
-              <a href="https://www.twitter.com/Chillguy_OnBase">
+              <a href="">
                 <img class="w-24 transform hover:scale-110 transition duration-200" src="images/x.jpg" alt>
               </a>
             </div>

@@ -1,0 +1,410 @@
+@font-face {
+    font-family: "Milky Nice";
+    src: url("./MilkyNice.ttf") format("truetype");
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  #content {
+    background-color: #ebd7ce;
+    margin: 0;
+    padding: 0;
+    font-family: "Milky Nice", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  header {
+    background-color: #ebd7ce;
+    text-align: center;
+    padding: 0 0 10px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 6rem;
+    padding-bottom: 20px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  nav {
+    background-color: #b02f31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    border-bottom: 5px solid #000;
+    z-index: 3;
+    position: sticky;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    margin-right: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .contract-address {
+    background-color: #ebd7ce;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .focus-text-1 {
+    color: #fff;
+    text-shadow: -4px 3px 0 #000;
+    -webkit-text-stroke-color: #343230;
+    -webkit-text-stroke-width: 1px;
+  }
+  
+  .focus-text-2 {
+    color: #b02f31;
+    text-shadow: -2px 2px 0 #000;
+    -webkit-text-stroke-color: #343230;
+    -webkit-text-stroke-width: 1px;
+  }
+  
+  .contract-address input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .contract-address button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #b02f31;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .section {
+    /* padding: 50px 0; */
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 36px;
+    color: #b02f31;
+  }
+  
+  .roost-101,
+  .tokenomics {
+    background-color: #ebd7ce;
+  }
+  
+  .roost-101 .steps,
+  .tokenomics .charts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .step,
+  .chart {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+  }
+  
+  .chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+  
+  .d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .faq {
+    background-color: #ebd7ce;
+    padding: 50px 0;
+  }
+  
+  .faq .question {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    background-color: #ebd7ce;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #b02f31;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: #b02f31;
+    color: white;
+    font-size: 24px;
+    padding: 20px 0;
+    border: 5px solid #000;
+    border-right: 0;
+    border-left: 0;
+  }
+  
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .bigger-font {
+    font-size: 1.5rem;
+  }
+  
+  .animated-image {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contract-address,
+    .section {
+      padding: 10px;
+    }
+    .roost-101 {
+      padding: 0;
+    }
+    header h1 {
+      font-size: 4rem;
+    }
+    .nav,
+    .logo {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    nav{
+      padding: 10px 5px;
+    }
+    .nav-links{
+      font-size: 15px;
+      gap: 10px;
+    }
+    .nav-links a {
+      margin: 5px 0;
+    }
+  
+    .contract-address input {
+      width: 80%;
+    }
+  
+    .step,
+    .chart {
+      width: 80%;
+    }
+    .img-flex {
+      max-width: 100%;
+    }
+    .image-container {
+      width: 100%; /* Make the container full width of its parent */
+      text-align: center; /* Center the image horizontally */
+    }
+    
+    .image-container img {
+      width: 100%; /* Make the image fill the width of its container */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Remove any extra spacing */
+      margin: 0 auto; /* Center the image within the container */
+    }
+    footer .bigger-font{
+      font-size: 18px;
+    }
+    footer a{
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 410px) {
+    .main-image{
+      margin-top: 65px;
+    }
+  }
+  button {
+    padding: 15px 30px;
+    font-size: 20px;
+    font-family: "Milky Nice", Arial, sans-serif;
+    background-color: #b02f31;
+    color: white;
+    border: 2px solid #343230;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: -4px 4px 0 #000;
+  }
+  
+  button:hover {
+    background-color: #b02f31;
+    transform: translateY(-5px);
+  }
+  
+  button:active {
+    background-color: #b02f31;
+    transform: translateY(0);
+  }
+  .logo-text {
+    font-size: 2rem;
+  }
+  .about-DIDDY {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid #b02f31;
+    padding: 0rem 1rem;
+    margin: 1.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    border-radius: 50px;
+  }
+  .about-DIDDY h2 {
+    margin: 0.5rem;
+    font-size: 3rem;
+  }
+  .about-DIDDY p {
+    font-size: 1.5rem;
+  }
+  
+  
+  .p-rl10{
+    padding: 0 10px;
+  }
+  
+  .p-10{
+    padding: 10px;
+  }
+  
+  .m-0{
+    margin: 0;
+  }
+  
+  .tokenomics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .faq-section {
+    padding: 10px;
+    margin: 20px auto;
+    text-align: left;
+    max-width: 800px;
+  }
+  
+  .faq-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 10px;
+  }
+  
+  details {
+    margin-bottom: 15px;
+    border: 2px solid #b02f31;
+    border-radius: 10px;
+    background: #fff;
+    padding: 5px 15px;
+  }
+  
+  details summary {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #312924;
+    cursor: pointer;
+  }
+  
+  details summary:hover {
+    color: #ebd7ce;
+  }
+  
+  details p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    line-height: 1.6;
+    color: #343230;
+  }
+  
+  details[open] summary {
+    text-decoration: underline;
+  }
+  
+  .uppercase{
+    text-transform: uppercase;
+  }

@@ -1,407 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$KingPrawn</title>
-    <!-- Add your CSS framework, e.g., CDN link for Tailwind CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>King Prawn</title>
+  <link href="./styles.css" rel="stylesheet" />
+</head>
 
-    <link rel="stylesheet" href="dist/output.css" />
-    <link rel="stylesheet" href="index.css" />
+<body>
+  <div id="content">
+    <nav>
+      <div class="nav-links">
+        <a href="">DEXSCREENER</a>
+        |
+        <a href="">DEXTOOLS</a>
+        | <a href="">X</a> |
+        <a href="">Telegram</a>
+      </div>
+    </nav>
+    <header>
+      <h1 class="focus-text-2">King Prawn</h1>
+      <p class="image-container main-image">
+        <img src="images/1.png" alt="Roost Mascot" class="animated-image img-flex" width="500"
+          style="padding-top: 40px" />
+      </p>
+      <p class="bigger-font p-rl10 uppercase">
+        The official crypto bros<br />
+      </p>
+      <p>
+        <a href=""><button>Buy King Prawn</button></a>
+      </p>
+      <p class="image-container">
+        <img src="images/2.png" alt="Roost Mascot" class="animated-image img-flex" width="500" />
+      </p>
+    </header>
+    <div class="contract-address focus-text-1 bigger-font">
+      <p>CONTRACT ADDRESS</p>
+      <input type="text" value="" readonly />
+      <button onclick="copyToClipboard()">COPY</button>
+    </div>
+    <div class="about-DIDDY">
+      <h2 class="focus-text-2 bigger-font">King Prawn : The Chad Coin That Could</h2>
+      <p class="bigger-font white-text">
+        In the wild world of crypto, King Prawn emerged. known for his serious gains and mad profits. Has only one
+        weakness, speaking to attractive women. Not Rosie O’Donnell. His slogan? “Make Alt Coins Great Again (MAGA)!”.
+        <br /> <br />
+        Pump wasn’t your ordinary politician. He wasn’t a politician at all! A former meme coin mogul, he’d turned a $50
+        investment into a $50 billion empire, mostly by shouting “HODL” louder than anyone else.
+        <br /> <br />
+        On election night, Pump crushed the competition, winning 69% of the vote (nice). His inaugural speech? “The
+        Blockchain has spoken! Together, we’ll mint a new America!”
+        The aim of King Prawn, America will be decentralized, innovative, and unstoppable. And Pump? Will be hailed as
+        the father of the Crypto Nation.
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@500&family=Poppins&family=Roboto:wght@500&family=Rubik+Bubbles&family=Tomorrow:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet">
-
-    <script
-      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="images/1.png">
-  </head>
-
-  <body class="font-Montserrat bg-white">
-    <div id="content">
-      <!-- Header Section -->
-      <nav class="nav-main ">
-        <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="images/1.png" class="h-12 rounded-full md:h-14"
-              alt="etf" />
-            <span
-              class=" md:hidden lg:block text-lg md:text-3xl font-extrabold whitespace-nowrap text-blue-500"
-              style="background-image: linear-gradient(to right, #3567F2, #3567F2);
-                color: transparent;
-                -webkit-background-clip: text; /* For Safari and older versions of Chrome */
-                background-clip: text;">King Prawn</span>
-          </a>
-          <button data-collapse-toggle="navbar-default" type="button"
-            style="color: cyan;"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-sm md:hidden hover:bg-cyan-500  "
-            aria-controls="navbar-default" aria-expanded="false"
-            onclick="toggleMenu()">
-            <span class="sr-only">Open main menu</span>
-            <span id="menuIcon" class="menu-icon">
-              <svg class="w-5 h-5" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15" />
-              </svg>
-            </span>
-          </button>
-          <div class="w-full md:block md:w-auto hidden" id="navbar-default">
-            <ul
-              class="font-medium flex flex-col  p-4 md:p-0 mt-4 border rounded-sm md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-              <li>
-                <a href="#"
-                  class="violet block py-2 px-3 text-black text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-pink-500 md:p-0"
-                  aria-current="page"><i class="bx bx-coin"></i> HOME</a>
-              </li>
-              <li>
-                <a href="#about"
-                  class="violet block py-2 px-3 text-black text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-pink-500 md:p-0"
-                  aria-current="page"><i class="bx bx-coin"></i> ABOUT</a>
-              </li>
-              <li>
-                <a href="#capy"
-                  class="violet block py-2 px-3 text-black text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-pink-500 md:p-0"
-                  aria-current="page"><i class="bx bx-coin"></i>$KingPrawn</a>
-              </li>
-              <li>
-                <a href="#social"
-                  class="violet block py-2 px-3 text-black text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-pink-500 md:p-0  ">
-                  <i class="bx bx-message-dots"></i> SOCIALS</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- <div class="my-2 md:block md:w-auto hidden" id="navbar-default-btn">
-        <a href="" class="">
-          <button type="button"
-            class="text-black bg-white hover:bg-white hover:text-black border border-white focus:outline-none focus:ring-4 focus:ring-white font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">
-            Join the community
-          </button>
-        </a>
-      </div> -->
+      </p>
+    </div>
+    <div class="d-flex">
+      <p class="image-container">
+        <img src="images/3.png" alt="Roost Mascot" class="animated-image img-flex" width="500" />
+      </p>
+    </div>
+    <div class="section roost-101">
+      <div class="marquee focus-text-1">
+        <span>King Prawn King Prawn King Prawn King Prawn King Prawn King Prawn King Prawn King Prawn King Prawn PUMP
+          TRUMP
+          King Prawn King Prawn King Prawn</span>
+      </div>
+      <h2 class="focus-text-2">Roadmap</h2>
+      <div class="steps">
+        <div class="step">
+          <h3 class="bigger-font m-0">Phase 1</h3>
+          <p>Project creation & Launch on ape store</p>
         </div>
-      </nav>
-
-      <!-- Hero Section -->
-      <section
-        class="flex flex-wrap justify-center items-center relative text-black text-center md:py-10 bg-cover bg-center">
-
-        <section class="text-center bg-white md:p-12">
-          <div
-            class="max-w-5xl mx-auto px-6 flex flex-col-reverse lg:flex-row items-center">
-            <div class="lg:w-1/2 text-center lg:text-left">
-
-              <h1
-                class="text-3xl text-center lg:text-5xl font-extrabold break-words lg:px-4 mt-6 lg:mt-0 lg:mb-10">
-                Welcome
-                to
-                <br>
-                <span
-                  class="text-center text-4xl lg:text-7xl text-cyan-500 glow-text"
-                  style="background-image: linear-gradient(to right, #3567F2, #3567F2);
-                    color: transparent;
-                    -webkit-background-clip: text;
-                    background-clip: text;">$KingPrawn</span>
-              </h1>
-              <a href class="w-full md:w-1/2 lg:w-1/2">
-                <button type="button"
-                  class="text-white flex justify-center gap-x-2 items-center  w-full bg-blue-500 hover:bg-white hover:text-blue-500 border border-blue-500 focus:outline-none focus:ring-4 focus:ring-white font-medium rounded-full text-lg px-5 py-2.5 me-2 my-6">
-                  BUY
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
-                    viewBox="0 0 24 25" fill="none"
-                    class="svgg">
-                    <path
-                      d="M6.25 5.44702C5.56 5.44702 5 6.00702 5 6.69702V18.197C5 18.887 5.56 19.447 6.25 19.447H17.75C18.44 19.447 19 18.887 19 18.197V14.447C19 14.1818 19.1054 13.9275 19.2929 13.7399C19.4804 13.5524 19.7348 13.447 20 13.447C20.2652 13.447 20.5196 13.5524 20.7071 13.7399C20.8946 13.9275 21 14.1818 21 14.447V18.197C21 19.059 20.6576 19.8856 20.0481 20.4951C19.4386 21.1046 18.612 21.447 17.75 21.447H6.25C5.38805 21.447 4.5614 21.1046 3.9519 20.4951C3.34241 19.8856 3 19.059 3 18.197V6.69702C3 5.83507 3.34241 5.00842 3.9519 4.39892C4.5614 3.78943 5.38805 3.44702 6.25 3.44702H10C10.2652 3.44702 10.5196 3.55238 10.7071 3.73991C10.8946 3.92745 11 4.18181 11 4.44702C11 4.71224 10.8946 4.96659 10.7071 5.15413C10.5196 5.34166 10.2652 5.44702 10 5.44702H6.25ZM14 5.44702C13.7348 5.44702 13.4804 5.34166 13.2929 5.15413C13.1054 4.96659 13 4.71224 13 4.44702C13 4.18181 13.1054 3.92745 13.2929 3.73991C13.4804 3.55238 13.7348 3.44702 14 3.44702H20C20.2652 3.44702 20.5196 3.55238 20.7071 3.73991C20.8946 3.92745 21 4.18181 21 4.44702V10.447C21 10.7122 20.8946 10.9666 20.7071 11.1541C20.5196 11.3417 20.2652 11.447 20 11.447C19.7348 11.447 19.4804 11.3417 19.2929 11.1541C19.1054 10.9666 19 10.7122 19 10.447V6.86102L14.707 11.154C14.5184 11.3362 14.2658 11.437 14.0036 11.4347C13.7414 11.4324 13.4906 11.3272 13.3052 11.1418C13.1198 10.9564 13.0146 10.7056 13.0123 10.4434C13.01 10.1812 13.1108 9.92862 13.293 9.74002L17.586 5.44702H14Z"
-                      fill="#fff"></path>
-                  </svg>
-                </button>
-              </a>
-              <div
-                class="flex justify-center items-center gap-x-3 mx-auto w-full">
-                <p class="text-black">CA: </p>
-                <div id="hs-clipboard-basic"
-                  class=" text-black border border-blue-500 rounded-lg w-1/2 md:w-1/2">
-                  <input id="hs-clipboard-input" type="text"
-                    class="py-3 px-4 block rounded-lg text-sm w-full md:w-full placeholder:text-red focus:border-blue-500 focus:ring-blue-500 bg-white border-gray-700"
-                    value="">
-                </div>
-                <button type="button"
-                  class="js-clipboard p-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-blue-500 bg-gray-300 text-black shadow-sm hover:bg-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-black dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  data-clipboard-target="#hs-clipboard-basic"
-                  data-clipboard-action="copy"
-                  data-clipboard-success-text="Copied"
-                  onclick="changeCopyText(this)">
-                  <svg
-                    class="js-clipboard-default w-4 h-4 group-hover:rotate-6 transition"
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
-                    <path
-                      d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                  </svg>
-
-                  <svg class="js-clipboard-success hidden w-4 h-4 text-blue-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span class="copy-text">copy</span>
-                </button>
-              </div>
-            </div>
-            <div class="main-logo  w-60 md:96 lg:w-1/2 ">
-              <img class="imglogo" src="images/1.png" alt="Animated etf logo"
-                width="400">
-            </div>
-          </div>
-
-          <div
-            class="chart z-10 w-full flex flex-col justify-center items-center ">
-
-            <div class="w-full flex justify-center mt-5">
-              <button type="button"
-                class="btn-buy flex flex-wrap justify-center h-16 w-64 md:w-96 items-center transform rounded-full hover:scale-x-110 hover:scale-y-110 transition duration-300 ease-out">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                  viewBox="0 0 24 24" style="fill:#000">
-                  <path d="M3 3v17a1 1 0 0 0 1 1h17v-2H5V3H3z"></path>
-                  <path
-                    d="M15.293 14.707a.999.999 0 0 0 1.414 0l5-5-1.414-1.414L16 12.586l-2.293-2.293a.999.999 0 0 0-1.414 0l-5 5 1.414 1.414L13 12.414l2.293 2.293z">
-                  </path>
-                </svg>
-                <a href class="text-black text-xl font-extrabold mx-5 ">
-                  CHART (DEXSCREENER)</a>
-              </button>
-            </div>
-
-          </div>
-
-        </section>
-
-        <!-- about section -->
-        <section id="about" class="shadow-2xl py-16">
-          <div
-            class="flex flex-col items-center justify-center mx-5 lg:mx-20 gap-5">
-            <p
-              class="text-4xl lg:text-5xl font-extrabold text-center text-black ">About
-              $KingPrawn</p>
-            <div
-              class="hero flex flex-col-reverse justify-between lg:flex-row items-center mx-5 lg:mx-10">
-              <div
-                class="main-logo about-logo w-fill lg:w-1/3 rounded-full mt-8">
-                <img src="images/2.png" alt="Animated" />
-              </div>
-              <div class="main-head text-black w-full lg:w-1/2 flex flex-col ">
-                <div
-                  class="flex flex-col lg:flex-row items-center justify-center ">
-                  <p
-                    class="about-context about-text text-gray-800 mx-2 md:mx-12 text-left md:text-left md:text-xl lg:text-2xl mt-5  flex flex-col">
-                    <span>
-                      TikTok’s viral trend features Pepe the King Prawn, a
-                      fan-favorite Muppets character, paired with
-                      hilarious captions recounting awkward or embarrassing
-                      moments.
-
-                      Pepe The King Prawn is the meme coin that has launched on
-                      Base. Inspired by Pepe the King Prawn’s
-                      viral deadpan humor, it’s all about fun memes and
-                      community. Whether you’re in it for the laughs or
-                      the potential gains, $Prawn is your ticket to join the
-                      squad and ride the next big wave. Keep it
-                      cheeky, keep it prawn don’t miss out!
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Tokenomics Section -->
-        <section id="capy" class=" text-black py-16">
-          <div
-            class="container mx-auto text-center flex flex-col items-center ">
-            <div
-              class="token1 flex flex-col-reverse md:flex-row md:items-center justify-start mx-4 md:mx-6 lg:mx-8">
-              <h1
-                class="token text-5xl lg:text-7xl font-extrabold mb-8 text-black ">TOKENOMICS</h1>
-              <img class="w-80 md:w-42 lg:w-64 px-5" src="images/3.png" alt>
-            </div>
-            <div
-              class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 m-10 align-middle ">
-              <!-- Total Supply -->
-              <div
-                class="token1 p-6 border-4 border-white rounded-lg shadow-2xl">
-                <h1 class="text-3xl font-bold text-black uppercase mb-2">Total
-                  Supply</h1>
-                <h1
-                  class="text-3xl font-bold text-black uppercase mb-2">Buy/sell
-                  tax 0%</h1>
-                <h1
-                  class="text-3xl font-bold text-black uppercase mb-2">Launched
-                  on Moonshot</h1>
-              </div>
-              <div
-                class="token1 p-6 border-4 border-white rounded-lg shadow-2xl">
-                <h1 class="text-3xl font-bold text-black uppercase mb-2">Fair
-                  launch </h1>
-                <h1 class="text-3xl font-bold text-black uppercase mb-2">Lp
-                  burned </h1>
-                <h1
-                  class="text-3xl font-bold text-black uppercase mb-2">Renounced</h1>
-              </div>
-              <!-- Initial Liquidity -->
-              <!-- <div class="token2 p-6 border-4 border-white rounded-lg shadow-md">
-          <h1 class="text-3xl font-bold mb-4 text-black">Tax</h1>
-          <p class="tok   pt-5">0%</p>
-        </div> -->
-              <!-- addd -->
-              <div
-                class="token3 p-6 border-4 border-white rounded-lg shadow-md">
-                <h1 class="text-3xl font-bold mb-4 text-black">CA</h1>
-
-                <div class="flex justify-center items-center w-full gap-x-3">
-
-                  <div id="hs-clipboard-basic"
-                    class=" text-black border  rounded-lg w-full ">
-                    <input id="hs-clipboard-input" type="text"
-                      class="py-3 px-4 block rounded-lg text-sm w-full md:w-full placeholder:text-black  bg-white"
-                      value="">
-                  </div>
-                  <button type="button"
-                    class="js-clipboard p-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border text-black shadow-sm disabled:opacity-50 disabled:pointer-events-none "
-                    data-clipboard-target="#hs-clipboard-basic"
-                    data-clipboard-action="copy"
-                    data-clipboard-success-text="Copied"
-                    onclick="changeCopyText(this)">
-                    <svg
-                      class="js-clipboard-default w-4 h-4 group-hover:rotate-6 transition"
-                      xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round">
-                      <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
-                      <path
-                        d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                    </svg>
-
-                    <svg
-                      class="js-clipboard-success hidden w-4 h-4 text-blue-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round">
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- social section -->
-        <section id="social">
-          <div
-            class="flex flex-col-reverse items-center md:flex-row justify-between gap-5 ">
-            <div
-              class="social w-full md:w-1/2 mx-4 px-4 flex justify-center items-center">
-              <img class="w-80 md:96 lg:w-[1000px] mx-8" src="images/4.png" alt>
-            </div>
-
-            <div class="social w-full md:w-1/2 mx-4 px-4">
-              <h1
-                class="text-center md:text-left text-3xl lg:text-5xl font-extrabold mb-8 text-black ">Follow
-                $KingPrawn on social media</h1>
-              <div
-                class="flex items-center justify-center md:justify-start gap-4 ">
-                <a href>
-                  <img
-                    class="w-24 transform hover:scale-110 transition duration-200"
-                    src="images/tg.png" alt>
-                </a>
-                <a href>
-                  <img
-                    class="w-24 transform hover:scale-110 transition duration-200"
-                    src="images/x.jpg" alt>
-                </a>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class=" text-black py-4 text-center mt-10">
-          <div class="container mx-auto">
-            <!-- Disclaimer, social media icons, copyright here -->
-            <p class="text-sm text-black">Copyright $KingPrawn © 2024. All
-              rights reserved</p>
-          </div>
-        </footer>
+        <div class="step">
+          <h3 class="bigger-font m-0">Phase 2</h3>
+          <p>Prepay DEXscreeener, Build the team.</p>
+        </div>
+        <div class="step">
+          <h3 class="bigger-font m-0">Phase 3</h3>
+          <p>Base trending, Coinranker trending & DEX ads</p>
+        </div>
+        <div class="step">
+          <h3 class="bigger-font m-0">Phase 4</h3>
+          <p>Listings<br />Listings on Coingecko, CMC and Partnerships</p>
+        </div>
+        <div class="step">
+          <h3 class="bigger-font m-0">Phase 5</h3>
+          <p>
+            Airdrop<br />A perfectly organized airdrop sequence to thousands of
+            wallets to increase exposure.
+          </p>
+        </div>
+        <div class="step">
+          <h3 class="bigger-font m-0">Phase 6</h3>
+          <p>
+            Utility<br />
+            Coming soon Stay tuned
+          </p>
+        </div>
       </div>
-      <div id="notFoundMessage">
-        404 Not Found
+      <p>
+        <img src="images/4.png" alt="Join the Base Coop" width="300" class="animated-image" />
+      </p>
+    </div>
+    <div class="section tokenomics">
+      <h2 class="focus-text-1">King Prawn TOKENOMICS</h2>
+      <div class="charts">
+        <div class="">
+          <p>
+            <img src="images/5.png" alt="Join the Base Coop" width="300" class="animated-image" />
+          </p>
+        </div>
+        <div class="steps tokenomics">
+          <div class="step">
+            <h3 class="bigger-font m-0">Supply 1bn</h3>
+          </div>
+          <div class="step">
+            <h3 class="bigger-font m-0">Buy/sell tax 0%</h3>
+          </div>
+          <div class="step">
+            <h3 class="bigger-font m-0">Launched on Moonshot</h3>
+          </div>
+          <div class="step">
+            <h3 class="bigger-font m-0">Fair launch </h3>
+          </div>
+          <div class="step">
+            <h3 class="bigger-font m-0">Lp burned </h3>
+          </div>
+          <div class="step">
+            <h3 class="bigger-font m-0">Renounced</h3>
+          </div>
+          <!-- <div class="step">
+            <h3 class="bigger-font m-0">No Hidden Owner</h3>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- <div class="d-flex">
+      <img
+        src="images/6.png"
+        alt="Join the Base Coop"
+        width="300"
+        class="animated-image"
+      />
+    </div> -->
+    <div class="d-flex">
+      <p class="image-container">
+        <img src="images/7.png" alt="Roost Mascot" class="animated-image img-flex" width="500" />
+      </p>
+    </div>
+    <div class="faq-section">
+      <div class="how-to-buy-section">
+        <h2 class="focus-text-1">How to Buy</h2>
+
+        <details>
+          <summary>Install Coinbase Wallet or Uniswap!</summary>
+          <p>
+            First things first, you'll need to install Coinbase Wallet or any other wallet that supports base. Just grab
+            it from the App Store or as a browser extension.
+          </p>
+        </details>
+
+        <details>
+          <summary>Get ETH on Base Network</summary>
+          <p>
+            Transfer ETH directly to your Base Network wallet or send it to your Ethereum wallet and bridge ETH to Base
+            via the official Coinbase Bridge or Orbiter Finance.
+          </p>
+        </details>
+
+        <details>
+          <summary>Grab Some $PTrump - Join the Party!</summary>
+          <p>
+            Swap your ETH for $PTrump, using the official contract address (CA) found on our page!
+          </p>
+        </details>
       </div>
 
-    </body>
+      <h2 class="focus-text-1">FAQ</h2>
 
-    <script>
+      <details>
+        <summary>What is King Prawn?</summary>
+        <p>
+          King Prawn blends humour, ambition, and blockchain innovation. It represents the ultimate tool for disrupting
+          old financial systems.
+        </p>
+      </details>
 
-  ScrollReveal().reveal(".social", { delay: 10, reset: false, origin: 'right', distance: '20px', duration: 300 });
+      <details>
+        <summary>What is King Prawn himself?</summary>
+        <p>
+          King Prawn himself, blending humour, ambition, and blockchain innovation. In the story of King Prawn’s rise,
+          this coin represents the ultimate tool for disrupting the old financial and political systems.
+        </p>
+      </details>
 
-  ScrollReveal().reveal(".token3", { delay: 100, reset: false, origin: 'right', distance: '500px', duration: 500 });
-  ScrollReveal().reveal(".token2", { delay: 100, reset: false, origin: 'right', distance: '500px', duration: 500 });
-  ScrollReveal().reveal(".token1", { delay: 100, reset: false, origin: 'right', distance: '500px', duration: 500 });
+      <details>
+        <summary>Is King Prawn a long-term investment?</summary>
+        <p>
+          King Prawn becomes a cultural and economic phenomenon, proving that a meme-inspired crypto can, in fact, make
+          Altcoins great again.
+        </p>
+      </details>
 
-  ScrollReveal().reveal(".chart", { delay: 100, reset: false, origin: 'bottom', distance: '500px', duration: 300 });
-  ScrollReveal().reveal(".main-head", { delay: 100, reset: false, origin: 'left', distance: '500px', duration: 300 });
-  ScrollReveal().reveal(".main-logo", { delay: 100, reset: false, origin: 'right', distance: '500px', duration: 300 });
-  ScrollReveal().reveal(".nav-main", { delay: 100, reset: false, origin: 'top', distance: '20px', duration: 300 });
-  ScrollReveal().reveal(".accordion", { delay: 100, reset: false, origin: 'right', distance: '20px', duration: 300 });
+      <details>
+        <summary>Why should I buy King Prawn?</summary>
+        <p>
+          Investing in King Prawn isn’t just about buying into a cryptocurrency—it’s about joining a movement for
+          financial freedom, transparency, and innovation.
+        </p>
+      </details>
 
-  // button menu nav
-  function toggleMenu() {
-    var icon = document.getElementById("menuIcon");
-    var navbar = document.getElementById("navbar-default");
+      <details>
+        <summary>What are the benefits of holding King Prawn?</summary>
+        <p>
+          Hodlers with significant stakes unlock perks like whale chat, having significant voting power and exclusive
+          access to merch. The vibrant community produces constant entertainment, from memes to viral campaigns. Plus,
+          the potential for skyrocketing gains doesn’t hurt.
+        </p>
+      </details>
 
-    if (navbar.style.display === 'none' || navbar.style.display === '') {
-      icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: cyan;"><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg>';
-      navbar.style.display = 'block';
-    } else {
-      icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: cyan;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>';
-      navbar.style.display = 'none';
-    }
+      <details>
+        <summary>Is King Prawn only for crypto enthusiasts?</summary>
+        <p>
+          Not at all! While King Prawn has its roots in the crypto world, it’s for anyone who enjoys fun, memes, and a
+          good community. Whether you’re an experienced crypto trader or just a crypto patriot looking for one way
+          ticket to the moon, King Prawn is for everyone.
+        </p>
+      </details>
+
+      <details>
+        <summary>How can I buy King Prawn?</summary>
+        <p>
+          King Prawn can be bought on supported decentralized exchanges (DEXs) or through various platforms where
+          memecoins are available. Be sure to check the official King Prawn channels for the most up-to-date purchasing
+          options and steps.
+        </p>
+      </details>
+
+      <details>
+        <summary>How do I stay updated on King Prawn news?</summary>
+        <p>
+          To stay informed about the latest updates, partnerships, giveaways, and events for King Prawn, follow our
+          official social media channels and join our community on platforms like Twitter, Telegram. King Prawn is
+          always up to something exciting!
+        </p>
+      </details>
+
+      <details>
+        <summary>Disclaimer</summary>
+        <p>
+          King Prawn is a memecoin, and like all cryptocurrencies, it carries inherent risk. Always conduct your own
+          research and never invest more than you can afford to lose.
+        </p>
+      </details>
+    </div>
+
+    <footer>
+      <h2 class="focus-text-1 bigger-font">SOCIALS</h2>
+      <p class="focus-text-2 bigger-font">Join the King Prawn community</p>
+      <p class="bigger-font">
+        <a href="">DEXSCREENER</a>
+        |
+        <a href="">DEXTOOLS</a>
+        | <a href="">X</a> |
+        <a href=">Telegram</a>
+      </p>
+    </footer>
+  </div>
+  <div id="notFoundMessage">
+    404 Not Found
+  </div>
+</body>
+<script>
+  function copyToClipboard() {
+    var copyText = document.querySelector(".contract-address input");
+    copyText.select();
+    document.execCommand("copy");
+    alert("CA Copied!");
   }
-
-  function changeCopyText(button) {
-    var copyTextElement = button.querySelector('.copy-text');
-    if (copyTextElement) {
-      copyTextElement.textContent = 'copied';
-    }
-  }
-
-  document.addEventListener('DOMContentLoaded', function () {
-    var clipboard = new ClipboardJS('.js-clipboard');
+  document.querySelectorAll('.accordion-button').forEach((button) => {
+    button.addEventListener('click', () => {
+      const accordion = button.parentElement;
+      accordion.classList.toggle('open');
+    });
   });
-
   // Define the target date
-  const targetDate = new Date("2025-01-25T23:59:59"); // Set your target date here
+  const targetDate = new Date("2025-01-10T23:59:59"); // Set your target date here
   const currentDate = new Date();
 
   // Check if the current date is less than the target date
@@ -414,29 +300,6 @@
       document.getElementById('content').style.display = 'none';
       document.getElementById('notFoundMessage').style.display = 'block';
   }
-
-  const menuIcon = document.querySelector('#menu-icon');
-  const navbar = document.querySelector('.navbar');
-  const navbg = document.querySelector('.nav-bg');
-  menuIcon.addEventListener('click', () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-    navbg.classList.toggle('active');
-  });
-  function toggleAccordion(button) {
-    const content = button.nextElementSibling;
-    const icon = button.querySelector('.accordion-icon');
-
-    // Toggle the hidden class
-    content.classList.toggle('hidden');
-
-    // Change icon between + and -
-    if (content.classList.contains('hidden')) {
-      icon.textContent = '+';
-    } else {
-      icon.textContent = '-';
-    }
-  }
 </script>
 
-  </html>
+</html>

@@ -10,12 +10,7 @@
 
 <body>
   <div id="content">
-    <audio id="background-music" autoplay loop>
-      <source src="./PrawnMeme.mp3" type="audio/mp3" />
-      <source src="./PrawnMeme.ogg" type="audio/ogg" />
-      <source src="./PrawnMeme.wav" type="audio/wav" />
-      Your browser does not support the audio element.
-    </audio>
+    <audio id="backgroundMusic" src="audio/bgmusic.mp3" muted loop=""></audio>
     <nav>
       <div class="nav-links">
         <a href="">DEXSCREENER</a>
@@ -276,37 +271,5 @@
     404 Not Found
   </div>
 </body>
-<script>
-  function copyToClipboard() {
-    var copyText = document.querySelector(".contract-address input");
-    copyText.select();
-    document.execCommand("copy");
-    alert("CA Copied!");
-  }
-  document.querySelectorAll('.accordion-button').forEach((button) => {
-    button.addEventListener('click', () => {
-      const accordion = button.parentElement;
-      accordion.classList.toggle('open');
-    });
-  });
-  // Define the target date
-  const targetDate = new Date("2025-01-26T23:59:59"); // Set your target date here
-  const currentDate = new Date();
-
-  // Check if the current date is less than the target date
-  if (currentDate < targetDate) {
-    // Show content if current date is before target date
-    document.getElementById('content').style.display = 'block';
-    document.getElementById('notFoundMessage').style.display = 'none';
-  } else {
-    // Show 404 message if current date is equal to or greater than target date
-    document.getElementById('content').style.display = 'none';
-    document.getElementById('notFoundMessage').style.display = 'block';
-  }
-  document.body.addEventListener('click', function() {
-    var audio = document.getElementById('background-music');
-    audio.muted = false;
-  });
-</script>
-
+<script src="./script.js"></script>
 </html>

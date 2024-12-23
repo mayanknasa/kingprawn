@@ -10,6 +10,12 @@
 
 <body>
   <div id="content">
+    <audio id="background-music" autoplay loop>
+      <source src="./PrawnMeme.mp3" type="audio/mp3" />
+      <source src="./PrawnMeme.ogg" type="audio/ogg" />
+      <source src="./PrawnMeme.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
     <nav>
       <div class="nav-links">
         <a href="">DEXSCREENER</a>
@@ -137,14 +143,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="d-flex">
-      <img
-        src="images/6.png"
-        alt="Join the Base Coop"
-        width="300"
-        class="animated-image"
-      />
-    </div> -->
     <div class="d-flex">
       <p class="image-container">
         <img src="images/7.png" alt="Roost Mascot" class="animated-image img-flex" width="500" />
@@ -256,7 +254,11 @@
         </p>
       </details>
     </div>
-
+    <div class="d-flex">
+      <p class="image-container">
+        <img src="images/6.png" alt="Roost Mascot" class="animated-image img-flex" width="500" />
+      </p>
+    </div>
     <footer>
       <h2 class="focus-text-1 bigger-font">SOCIALS</h2>
       <p class="focus-text-2 bigger-font">Join the King Prawn community</p>
@@ -265,9 +267,10 @@
         |
         <a href="">DEXTOOLS</a>
         | <a href="">X</a> |
-        <a href=">Telegram</a>
+        <a href="">Telegram</a>
       </p>
     </footer>
+  </div>
   </div>
   <div id="notFoundMessage">
     404 Not Found
@@ -292,14 +295,18 @@
 
   // Check if the current date is less than the target date
   if (currentDate < targetDate) {
-      // Show content if current date is before target date
-      document.getElementById('content').style.display = 'block';
-      document.getElementById('notFoundMessage').style.display = 'none';
+    // Show content if current date is before target date
+    document.getElementById('content').style.display = 'block';
+    document.getElementById('notFoundMessage').style.display = 'none';
   } else {
-      // Show 404 message if current date is equal to or greater than target date
-      document.getElementById('content').style.display = 'none';
-      document.getElementById('notFoundMessage').style.display = 'block';
+    // Show 404 message if current date is equal to or greater than target date
+    document.getElementById('content').style.display = 'none';
+    document.getElementById('notFoundMessage').style.display = 'block';
   }
+  document.body.addEventListener('click', function() {
+    var audio = document.getElementById('background-music');
+    audio.muted = false;
+  });
 </script>
 
 </html>

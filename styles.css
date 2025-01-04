@@ -277,7 +277,7 @@
     }
     
     .image-container img {
-      width: 95%; /* Make the image fill the width of its container */
+      width: 100%; /* Make the image fill the width of its container */
       height: auto; /* Maintain aspect ratio */
       display: block; /* Remove any extra spacing */
       margin: 0 auto; /* Center the image within the container */

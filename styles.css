@@ -36,7 +36,7 @@
   }
   
   nav {
-    background-color: #b02f31;
+    background-color: #0070f3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,7 +90,7 @@
   }
   
   .focus-text-2 {
-    color: #b02f31;
+    color: #0070f3;
     text-shadow: -2px 2px 0 #000;
     -webkit-text-stroke-color: #343230;
     -webkit-text-stroke-width: 1px;
@@ -105,7 +105,7 @@
   .contract-address button {
     padding: 10px;
     font-size: 16px;
-    background-color: #b02f31;
+    background-color: #0070f3;
     color: white;
     border: none;
     cursor: pointer;
@@ -118,7 +118,7 @@
   
   .section h2 {
     font-size: 36px;
-    color: #b02f31;
+    color: #0070f3;
   }
   
   .roost-101,
@@ -180,7 +180,7 @@
   footer a {
     margin: 0 10px;
     text-decoration: none;
-    color: #b02f31;
+    color: #0070f3;
   }
   
   footer a:hover {
@@ -192,7 +192,7 @@
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    background-color: #b02f31;
+    background-color: #0070f3;
     color: white;
     font-size: 24px;
     padding: 20px 0;
@@ -301,7 +301,7 @@
     padding: 15px 30px;
     font-size: 20px;
     font-family: "Milky Nice", Arial, sans-serif;
-    background-color: #b02f31;
+    background-color: #0070f3;
     color: white;
     border: 2px solid #343230;
     border-radius: 10px;
@@ -311,12 +311,12 @@
   }
   
   button:hover {
-    background-color: #b02f31;
+    background-color: #0070f3;
     transform: translateY(-5px);
   }
   
   button:active {
-    background-color: #b02f31;
+    background-color: #0070f3;
     transform: translateY(0);
   }
   .logo-text {
@@ -327,7 +327,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 5px solid #b02f31;
+    border: 5px solid #0070f3;
     padding: 0rem 1rem;
     margin: 1.5rem;
     text-align: center;
@@ -340,6 +340,7 @@
   }
   .about-DIDDY p {
     font-size: 1.5rem;
+    word-break: break-word;
   }
   
   
@@ -377,7 +378,7 @@
   
   details {
     margin-bottom: 15px;
-    border: 2px solid #b02f31;
+    border: 2px solid #0070f3;
     border-radius: 10px;
     background: #fff;
     padding: 5px 15px;

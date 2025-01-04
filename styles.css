@@ -28,8 +28,6 @@
   header h1 {
     margin: 0;
     font-size: 6rem;
-    padding-bottom: 20px;
-    position: absolute;
     z-index: 2;
     text-align: center;
     margin: 0 auto;
@@ -220,11 +218,11 @@
     font-size: 1.5rem;
   }
   
-  .animated-image {
+  /* .animated-image {
     animation: float 6s ease-in-out infinite;
-  }
+  } */
   
-  @keyframes float {
+  /* @keyframes float {
     0%,
     100% {
       transform: translateY(0);
@@ -232,7 +230,7 @@
     50% {
       transform: translateY(-20px);
     }
-  }
+  } */
   
   @media (max-width: 768px) {
     .contract-address,
@@ -279,7 +277,7 @@
     }
     
     .image-container img {
-      width: 100%; /* Make the image fill the width of its container */
+      width: 95%; /* Make the image fill the width of its container */
       height: auto; /* Maintain aspect ratio */
       display: block; /* Remove any extra spacing */
       margin: 0 auto; /* Center the image within the container */
@@ -292,11 +290,6 @@
     }
   }
   
-  @media (max-width: 410px) {
-    .main-image{
-      margin-top: 65px;
-    }
-  }
   button {
     padding: 15px 30px;
     font-size: 20px;
